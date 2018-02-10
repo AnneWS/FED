@@ -1,0 +1,17 @@
+console.log("studentenhuis check");
+
+//filteren bron: codepen van joostf
+// selecteerd het element wat je wilt
+var openKlap = document.querySelector('article>p:nth-of-type(2)');
+var button = document.querySelector('article>button');
+
+// toggle functie maakt een class
+var toggleInfo = function () {
+  console.log(1);
+  openKlap.classList.toggle('show');
+  button.classList.toggle('show');
+  event.preventDefault();
+}
+
+// event wordt toegevoegd
+button.addEventListener('click', toggleInfo);
