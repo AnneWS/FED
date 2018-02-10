@@ -1,0 +1,109 @@
+@font-face {
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    font-family: 'Raleway';
+    background-color: floralwhite;
+    margin: 0;
+}
+
+header {
+    background-color: coral;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+}
+
+ul {
+    display: flex;
+}
+
+nav>ul>li {
+    text-decoration: none;
+    list-style: none;
+}
+
+nav>ul>li>img:nth-of-type(1) {
+    width: 3.5em;
+    height: auto;
+    margin-right: 2em;
+}
+
+nav>ul>li>img:nth-of-type(2) {
+    width: 3.5em;
+    height: auto;
+}
+
+main {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+}
+
+main>h1 {
+    font-size: 1.2em;
+    display: inline-block;
+}
+
+article {
+    margin: 3em;
+    margin-bottom: 0em;
+    margin-right: auto;
+}
+
+article>p>img {
+    width: 20em;
+    height: auto;
+    display: inline-block;
+}
+
+article>h1 {
+    font-size: 1.5em;
+}
+
+.plaatje {
+    width: 25em;
+    height: auto;
+    display: block;
+    float: left;
+}
+
+article>p:nth-of-type(1) {
+    font-size: 1em;
+    margin-top: 3em;
+}
+
+article>p:nth-of-type(2) {
+    opacity: 0;
+}
+/*micro interactie*/
+article>p:nth-of-type(2).show {
+    opacity: 1;
+    font-size: 1em;
+}
+
+article>button:nth-of-type(1) {
+    background-color: coral;
+    color: white;
+    border: none;
+    border-radius: 50em;
+    width: 2em;
+    height: 2em;
+    transform: rotate(180deg);
+    transition: transform 1s;
+}
+article>button:nth-of-type(1).show {
+    transition: transform 1s;
+    transform: rotate(0deg);
+}
+
+article>a {
+}
+
+article>p>button {
+    background-color: coral;
+    color: white;
+    border: none;
+    border-radius: 50em;
+    padding: 0.8em;
+}
