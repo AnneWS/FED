@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="NL">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Studentenhuizen</title>
+    <link href="css/fedstudenthuis.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <img src="img/hartje-wit.png" alt="zoeken">
+                </li>
+                <li>
+                    <img src="img/searching-wit.png" alt="bekijk favorieten">
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!--<h1>Resultaten voor:</h1>-->
+        <article>
+            <h1>Meerling 17</h1>
+            <img class="plaatje" src="img/804469091910093738b53676f03baae984ee7473.jpeg" alt="studentenhuis Meerling"><p>500m<sup>2</sup> <br> €500,- per maand</p>
+            <button>V</button>
+            <a></a>
+            <p>Meer informatie over het studentenhuis <button>Aanvragen</button></p>
+        </article>
+        <article>
+            <h1>Amstelveenseweg 208</h1>
+            <img class="plaatje" src="img/AppartementNaritaweg_4AMSTERDAM1043BX541042177Ontwerp_2_wasa.JPG" alt="studentenhuis Amstelveenseweg"><p>900m<sup>2</sup> <br> €1250,- per maand</p>
+            <button>V</button>
+            <a></a>
+            <p>Meer informatie over het studentenhuis <button>Aanvragen</button></p>
+        </article>
+        <article>
+            <h1>Burgermeester Mijnliefstraat 405b</h1>
+            <img class="plaatje" src="img/medium.jpg" alt="studentenhuis Mijnliefstraat"><p>750m<sup>2</sup> <br> €999,- per maand</p>
+            <button>V</button>
+            <a></a>
+            <p>Meer informatie over het studentenhuis<button>Aanvragen</button></p>
+        </article>
+        <article>
+            <h1>De bokstraat 67</h1>
+            <img class="plaatje" src="img/DSC_3733%20(1).jpg" alt="studentenhuis Bokstraat"><p>300m<sup>2</sup> <br> €450,- per maand</p>
+            <button>V</button>
+            <a></a>
+            <p>Meer informatie over het studentenhuis<button>Aanvragen</button></p>
+        </article>
+    </main>
+    <script src="js/fedstudenthuis.js"></script>
+</body>
+
+</html>
