@@ -1,1 +1,81 @@
+<!DOCTYPE html>
+<html lang="NL">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Studentenhuizen</title>
+    <link href="css/fedstudenthuis.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a>Student Huis</a>
+                </li>
+                <li>
+                    <img src="img/hartje-wit.png" alt="zoeken">
+                </li>
+                <li>
+                    <img src="img/searching-wit.png" alt="bekijk favorieten">
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!--<h1>Resultaten voor:</h1>-->
+        <article>
+            <h1>Meerling 17, Amsterdam</h1>
+            <img class="plaatje" src="img/804469091910093738b53676f03baae984ee7473.jpeg" alt="studentenhuis Meerling">
+            <img src="img/hartje-wit.png" alt="favoriet dit huis">
+            <p>50m<sup>2</sup>
+            Appartement</p>
+            <p>€500,- per maand</p>
+            <p>Meer informatie</p><button>V</button>
+            <a></a>
+            <p>Per februari is er een kamer beschikbaar in een ruim drie kamerappartement in hartje centrum (Weteringbuurt). De kamer zelf is 13m<sup>2</sup> met eigen wasbak, inbouw opslagruimte en balkon aan je kamer. Keuken is voorzien van vaatwasser. Douche met ligbad, 2 wasbakken en ruime woonkamer. Prijs is incl. internet, gas, water, licht en belastingen. Inschrijven mogelijk. Roomie m/v is in eindfase studie of werkend.<button>Aanvraag doen</button></p>
+        </article>
+        <article>
+            <h1>Amstelveenseweg 208</h1>
+            <img class="plaatje" src="img/AppartementNaritaweg_4AMSTERDAM1043BX541042177Ontwerp_2_wasa.JPG" alt="studentenhuis Amstelveenseweg">
+            <img src="img/hartje-wit.png" alt="favoriet dit huis">
+            <p>90m<sup>2</sup>
+            Volledige woning</p>
+            <p>€1250,- per maand</p>
+            <p>Meer informatie</p><button>V</button>
+            <a></a>
+            <p>Per februari is er een kamer beschikbaar in een ruim drie kamerappartement in hartje centrum (Weteringbuurt). De kamer zelf is 13m<sup>2</sup> met eigen wasbak, inbouw opslagruimte en balkon aan je kamer. Keuken is voorzien van vaatwasser. Douche met ligbad, 2 wasbakken en ruime woonkamer. Prijs is incl. internet, gas, water, licht en belastingen. Inschrijven mogelijk. Roomie m/v is in eindfase studie of werkend.<button>Aanvraag doen</button></p>
+        </article>
+        <article>
+            <h1>Burgermeester Mijnliefstraat 405b</h1>
+            <img class="plaatje" src="img/medium.jpg" alt="studentenhuis Mijnliefstraat">
+            <img src="img/hartje-wit.png" alt="favoriet dit huis">
+            <p>75m<sup>2</sup>
+            Volledige woning</p>
+            <p>€999,- per maand</p>
+            <p>Meer informatie</p><button>V</button>
+            <a></a>
+            <p>Per februari is er een kamer beschikbaar in een ruim drie kamerappartement in hartje centrum (Weteringbuurt). De kamer zelf is 13m<sup>2</sup> met eigen wasbak, inbouw opslagruimte en balkon aan je kamer. Keuken is voorzien van vaatwasser. Douche met ligbad, 2 wasbakken en ruime woonkamer. Prijs is incl. internet, gas, water, licht en belastingen. Inschrijven mogelijk. Roomie m/v is in eindfase studie of werkend.<button>Aanvraag doen</button></p>
+        </article>
+        <article>
+            <h1>De bokstraat 67</h1>
+            <img class="plaatje" src="img/DSC_3733%20(1).jpg" alt="studentenhuis Bokstraat">
+            <img src="img/hartje-wit.png" alt="favoriet dit huis">
+            <p>30m<sup>2</sup>
+            Kamer</p>
+            <p>€450,- per maand</p>
+            <p>Meer informatie</p><button>V</button>
+            <a></a>
+            <p>Per februari is er een kamer beschikbaar in een ruim drie kamerappartement in hartje centrum (Weteringbuurt). De kamer zelf is 13m<sup>2</sup> met eigen wasbak, inbouw opslagruimte en balkon aan je kamer. Keuken is voorzien van vaatwasser. Douche met ligbad, 2 wasbakken en ruime woonkamer. Prijs is incl. internet, gas, water, licht en belastingen. Inschrijven mogelijk. Roomie m/v is in eindfase studie of werkend.<button>Aanvraag doen</button></p>
+        </article>
+    </main>
+    <script src="js/fedstudenthuis.js"></script>
+</body>
+
+</html>
 
