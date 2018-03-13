@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="NL">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Portfolio</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/startpagina.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body id="page-top">
+    <nav>
+        <ul>
+            <li>
+                <a href="startpagina.html">Startpagina</a>
+            </li>
+            <li>
+                <a href="portfolio.html">Portfolio</a>
+            </li>
+            <li>
+                <a href="#about">Over mij</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <header>
+        <img src="img/me.jpg" alt="Dit ben ik, Anne-Wil">
+        <h1>Anne-Wil Sikma</h1>
+        <hr class="star-light">
+        <h2></h2>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" tabindex="0">
+        <a href=”#page-top” class=”back-to-top”>
+        <i class=”fa fa-arrow-circle-up”></i></a>
+        <h2>Over mij</h2>
+        <hr class="star-dark">
+        <p>Momenteel studeer ik Communicatie en Multimedia design aan de HvA. Deze studie ben ik begonnen in september 2016.</p>
+        <p>Mijn visie ligt bij het ontwerpen. Ik vind het leuk om nieuwe dingen te bedenken en het te maken.</p>
+        <button><a href="portfolio.html">Bekijk portfolio</a></button>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" tabindex="0">
+        <h2>Contact</h2>
+        <hr class="star-dark">
+        <!-- To configure the contact form email address, go to mail/contact_me.php and update the email ad
+        dress in the PHP file on line 19. -->
+        <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
+        <form name="sentMessage" id="contactForm" novalidate="novalidate">
+            <label>Naam</label>
+            <input id="name" type="text" placeholder="Naam" required="required" data-validation-required-message="Please enter your name.">
+            <label id="email">E-mail adres</label>
+            <input id="email" type="email" placeholder="E-mail adres" required="required" data-validation-required-message="Please enter your email address.">
+            <!--<div class="control-group">
+                            <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                <label>Phone Number</label>
+                                <input class="form-control" id="phone" type="tel" placeholder="Phone Number" required="required" data-validation-required-message="Please enter your phone number.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>-->
+            <label id="message">Bericht</label>
+            <textarea id="message" rows="5" placeholder="Je bericht" required="required" data-validation-required-message="Please enter a message."></textarea>
+            <div id="success"></div>
+            <button type="submit">Versturen</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <ul class="list-inline mb-0">
+            <li class="list-inline-item">
+                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.facebook.com/annewil.sikma">
+                  <i class="fa fa-fw fa-facebook"></i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
+                  <i class="fa fa-fw fa-google-plus"></i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
+                  <i class="fa fa-fw fa-twitter"></i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
+                  <i class="fa fa-fw fa-linkedin"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <div class="copyright">
+        <small>Copyright &copy; Anne-Wil Sikma 2018</small>
+    </div>
+    <script src="js/startpagina.js"></script>
+</body>
+
+</html>
