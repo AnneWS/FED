@@ -5,7 +5,7 @@ Voor opdracht 1 is het de bedoeling om een website te maken voor studentenhuizen
 De site die ik heb gemaakt, is gemaakt op maat voor een desktop/laptop scherm.
 
 Na de eerste test bleek dat het knopje om meer informatie te kunnen bekijken niet duidelijk genoeg was. Ook was de header met de bijbehorende iconen te groot. Ook was er te veel ruimte tussen de resultaten, waardoor het leek of er maar één rij resultaten was. De prijs, wat toch wel een van de belangrijkste dingen is, was niet het hetgeen wat testers het eerste zagen.
-Bij de tweede test waren de reacties al positiever, maar vonden de testers dat de tekst onder de afbeelding beter naast elkaar konden staan, in plaats van als een lijst. Het knopje voor meer informatie was al duidelijker, maar het ? hoefde er niet per se achter. Het hartje in de afbeelding viel niet zo veel op in sommige afbeeldingen.
+Bij de tweede test waren de reacties al positiever, maar vonden de testers dat de tekst onder de afbeelding beter naast elkaar konden staan, in plaats van als een lijst. Het knopje voor meer informatie was al duidelijker, maar de ? hoefde er niet per se achter. Het hartje in de afbeelding viel niet zo veel op in sommige afbeeldingen.
 
 [Code demo versie 1](https://github.com/AnneWS/FED/blob/master/v1/html1)
 
