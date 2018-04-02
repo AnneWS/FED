@@ -19,6 +19,7 @@ Voor opdracht 2 is het de bedoeling om een scrolling section te maken op een (po
 De site die ik heb gemaakt, is gemaakt op maat voor een desktop/laptop scherm.
 
 [Code demo versie 1](https://github.com/AnneWS/FED/blob/master/opdracht2/v1/html)
+
 [Code demo versie 2](https://github.com/AnneWS/FED/blob/master/opdracht2/v2/html)
 
 Voor opdracht 3 is het de bedoeling om data van buitenaf in te laden op jouw eigen website. Dit gebeurd door JSON. Je maakt je html elementen in de javascript. Hierbij moesten nog meerdere events toegevoegd worden.
