@@ -1,0 +1,177 @@
+/*jslint browser: true, devel: true, eqeq: true, plusplus: true, sloppy: true, vars: true, white: true*/
+/*eslint-env browser*/
+/*eslint 'no-console':0*/
+
+var requestURL = 'http://dennistel.nl/movies';
+
+var request = new XMLHttpRequest();
+
+request.open('GET', requestURL);
+
+request.responseType = 'json';
+
+request.send();
+
+//console.log('json');
+
+console.dir(request);
+
+console.log(request);
+
+request.onload = function () {
+    var jsonObj = request.response;
+    filmTitel(jsonObj);
+    //    filmTitel2(filmLijst);
+};
+
+//carroussel
+var slider = document.querySelector('.carroussel');
+var back = document.querySelector('.back');
+var next = document.querySelector('.next');
+var currentslide = 0;
+var breedte = document.querySelector('section>div>img').width;
+console.log(breedte);
+
+function slideCarroussel() {
+    slider.style.transform = 'translate(-' + (currentslide * breedte) + 'px)';
+}
+
+
+//actie !
+next.addEventListener("click", function () {
+    console.log('volgende slide + keyCode');
+    currentslide++;
+    if (currentslide > 3) {
+        currentslide = 0;
+    }
+    slideCarroussel();
+
+});
+
+back.addEventListener("click", function () {
+        console.log('Naar slide');
+        currentslide--;
+        if (currentslide < 0) {
+            currentslide = 3;
+        }
+        slideCarroussel();
+    }
+
+);
+
+//alle html elementen die al bestaan in het html file
+var header = document.querySelector('header');
+var section = document.querySelector('section');
+var footer = document.querySelector('footer');
+
+//logo wordt aangemaakt
+var logoFilmsite = document.createElement('img');
+logoFilmsite.src = 'img/noun_582088_cc.png';
+//logoFilmsite.textContent += 'Movie it';
+header.appendChild(logoFilmsite);
+
+//tekst in header
+var logoTekst = document.createElement('h2');
+logoTekst.textContent = 'Movie it';
+//logoFilmsite.textContent += 'Movie it';
+header.appendChild(logoTekst);
+
+//tekst wordt aangemaakt
+var resultTitle = document.createElement('h1');
+resultTitle.textContent = 'Populairste films aller tijden';
+section.appendChild(resultTitle);
+
+
+//functie met elementen van de API worden aangemaakt
+function filmTitel(jsonObj) {
+    for (var i = 0; i < jsonObj.length; i++) {
+
+        var myArticle = document.createElement('article')
+
+        var myTitle = document.createElement('h2');
+        myTitle.textContent = jsonObj[i].title;
+        myArticle.appendChild(myTitle);
+
+        var myCover = document.createElement('img');
+        myCover.src = jsonObj[i].cover;
+        myArticle.appendChild(myCover);
+
+        var mySimplePlot = document.createElement('p');
+        mySimplePlot.textContent = jsonObj[i].simple_plot;
+        myArticle.appendChild(mySimplePlot);
+
+        var myReleasedate = document.createElement('p');
+        myReleasedate.textContent = jsonObj[i].release_date;
+        myArticle.appendChild(myReleasedate);
+
+        var myGenre = jsonObj[i].genres;
+        for (var j = 0; j < myGenre.length; j++) {
+            var myGenreP = document.createElement('p');
+            myGenreP.textContent = myGenre[j];
+            myArticle.appendChild(myGenreP);
+        };
+
+        var myDirector = jsonObj[i].directors;
+        for (var x = 0; x < myDirector.length; x++) {
+            var myDirectorP = document.createElement('p');
+            myDirectorP.textContent = 'Director: ' + myDirector[x].name;
+            myArticle.appendChild(myDirectorP);
+        };
+
+        var buttonActor = document.createElement('button');
+        buttonActor.textContent = 'Cast';
+        myArticle.appendChild(buttonActor);
+
+        var myActors = jsonObj[i].actors;
+        for (var j = 0; j < myActors.length; j++) {
+            var myActorsP = document.createElement('p');
+            myActorsP.classList.add('actors');
+            myActorsP.textContent = myActors[j].actor_name;
+            myArticle.appendChild(myActorsP);
+        };
+
+        /*var myActorsPhoto = jsonObj[i].actors;
+        for (var j = 0; j < myActorsPhoto.length; j++) {
+            var myActorsPhotoP = document.createElement('img');
+            myActorsPhotoP.classList.add('pics');
+            myActorsPhotoP.src = myActorsPhoto[j].url_photo;
+            section.appendChild(myActorsPhotoP);
+        };*/
+
+        var myActorsCharacter = jsonObj[i].actors;
+        for (var j = 0; j < myActorsCharacter.length; j++) {
+            var myActorsCharP = document.createElement('p');
+            myActorsCharP.classList.add('character');
+            myActorsCharP.textContent = 'Speelt: ' + myActorsCharacter[j].character;
+            myArticle.appendChild(myActorsCharP);
+        };
+
+        section.appendChild(myArticle);
+    };
+    //filteren bron: codepen van joostf
+    // selecteerd het element wat je wilt
+    var openActeur = document.querySelector(".actors");
+    var openChar = document.querySelector(".character");
+    var button = document.querySelector("article>button");
+
+    // toggle functie maakt een class
+    var toggleActor = function () {
+        console.log(1);
+        openActeur.classList.toggle('show');
+        openChar.classList.toggle('show');
+        event.preventDefault();
+    }
+
+    // event wordt toegevoegd
+    button.addEventListener('click', toggleActor);
+
+    /*buttonActor.appendChild(myActorsP);
+    buttonActor.onclick = function() {
+        console.log(this)
+        this.parentElement.classList.toggle('show');
+    }*/
+};
+
+var credits = document.createElement('small');
+credits.textContent = 'Movie it';
+footer.appendChild(credits);
