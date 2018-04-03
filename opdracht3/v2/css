@@ -1,0 +1,200 @@
+@font-face {
+    font-family: 'Raleway', sans-serif;
+}
+body {
+    background-color: midnightblue;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    margin-left: 5em;
+    margin-right: 5em;
+    min-width: 22em;
+}
+
+header {
+    background-color: white;
+    margin: 0;
+    padding-top: 0.1em;
+    margin-left: -5em;
+    margin-right: -5em;
+    height: 4em;
+}
+
+header>h2 {
+    color: darkblue;
+    margin-top: -2em;
+    margin-left: 6.5em;
+}
+
+header>img {
+    width: 4em;
+    height: auto;
+    margin-left: 5.65em;
+}
+
+h1 {
+    color: white;
+    font-size: 3em;
+    margin-left: 0.25em;
+    margin-bottom: -0.1em;
+    display: block;
+    margin-right: auto;
+    display: none;
+}
+
+main {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+}
+
+section {
+/*    background-color: gray;*/
+/*    display: flex;*/
+    padding-top: 0.01em;
+    padding-bottom: 2em;
+    display: block;
+    border: solid;
+    border-style: dashed;
+    border-color: white;
+    border-spacing: 1em;
+    border-width: 0.5em;
+    border-top: none;
+    border-bottom: none;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+section>div {
+    display: flex;
+    flex-flow: row;
+}
+section>div>img {
+    width: 650px;
+    height: 437.5px;
+    position: relative;
+}
+
+.next {
+    overflow: auto;
+    position: relative;
+    float: right;
+}
+
+.back {
+    overflow: auto;
+    position: relative;
+    float: left;
+}
+
+article {
+    display: block;
+    flex-basis: auto;
+}
+
+article>h2 {
+    color: lightgreen;
+    margin-top: 2em;
+    margin-left: 0.6em;
+    display: block;
+}
+
+article>h2:nth-of-type(2){
+    margin-top: 3em;
+}
+
+.carroussel {
+    overflow: hidden;
+}
+section>article>img {
+    width: 10em;
+    height: auto;
+    margin-left: 1em;
+    float: left;
+    display: block;
+}
+
+article>p {
+    color: white;
+    font-size: 0.8rem;
+    margin-left: 17em;
+    margin-right: 1em;
+    max-width: 20em;
+}
+
+section>article>button {
+    margin-left: -12em;
+    margin-right: 1em;
+    background-color: lightgreen;
+    border-color: darkgreen;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    margin-top: 8.1em;
+}
+
+.pics {
+    width: 15em;
+    height: auto;
+}
+
+section>article:nth-of-type(2)>button {
+    margin-top: 4.7em;
+}
+
+section>article:nth-of-type(3)>button {
+    margin-top: 6.2em;
+}
+
+section>article:nth-of-type(4)>button {
+    margin-top: 2.8em;
+}
+
+section>article:nth-of-type(5)>button {
+    margin-top: 3.7em;
+}
+
+section>article:nth-of-type(6)>button {
+    margin-top: 5.5em;
+}
+
+section>article>button:hover {
+    background-color: darkgreen;
+}
+
+article>p.actors {
+/*    display: inline-block;*/
+    color: white;
+    opacity: 0;
+    display: none;
+}
+
+article>p.character {
+/*    display: inline-block;*/
+    color: white;
+    opacity: 0;
+    display: none;
+}
+
+article>p.actors.show {
+    color: white;
+    opacity: 1;
+    margin-left: 30em;
+    display: table-cell;
+}
+
+article>p.character.show {
+    opacity: 1;
+    display: table-cell;
+}
+
+footer {
+    background-color: white;
+    margin-left: -5em;
+    margin-right: -5em;
+    padding-bottom: 0.5em;
+}
+
+small {
+    margin-left: 7em;
+}
