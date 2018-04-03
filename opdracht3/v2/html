@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Movie it</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header></header>
+
+    <section>
+        <div class="carroussel">
+            <img src="img/3885634301_f41a418949_o.jpg" alt="film 1">
+            <img src="img/4583934715_8ca76bb1b2_o.jpg" alt="film 2">
+            <img src="img/4968090389_8e4f94b1d8_o.jpg" alt="film 3">
+        </div>
+        <nav>
+            <button class="back"></button>
+            <button class="next"></button>
+        </nav>
+    </section>
+
+    <footer></footer>
+
+    <script src="js/first.js"></script>
+</body>
+
+</html>
