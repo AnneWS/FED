@@ -1,0 +1,177 @@
+@font-face {
+    font-family: 'Raleway', sans-serif;
+}
+body {
+    background-color: black;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    margin-left: 5em;
+    margin-right: 5em;
+    min-width: 22em;
+    color: white;
+}
+
+header {
+    background-color: white;
+    margin: 0;
+    padding-top: 0.1em;
+    margin-left: -5em;
+    margin-right: -5em;
+    height: 4em;
+}
+
+header>h2 {
+    color: darkblue;
+    margin-top: -2em;
+    margin-left: 6.5em;
+}
+
+header>img {
+    width: 4em;
+    height: auto;
+    margin-left: 5.65em;
+}
+
+.mySlides {
+    width: 65%;
+    height: auto;
+    opacity: 0;
+    z-index: 1;
+    position: absolute;
+    margin-left: 1.2%;
+}
+
+.show {
+    opacity: 1;
+    z-index: 2;
+    transition: 0.5s opacity;
+}
+
+section>div {
+    display: flex;
+    flex-flow: row;
+}
+
+.next {
+    background-color: white;
+    border: none;
+    border-radius: 5em;
+    color: black;
+    height: 3em;
+    width: 3em;
+    position: absolute;
+    top: 50%;
+    right: 29%;
+    z-index: 3;
+}
+
+.back {
+    background-color: white;
+    border: none;
+    border-radius: 5em;
+    color: black;
+    height: 3em;
+    position: absolute;
+    width: 3em;
+    top: 50%;
+    left: 7%;
+    z-index: 3;
+}
+
+
+article {
+    position: relative;
+    z-index: 2;
+    margin: 5em;
+    padding: 2em;
+    margin-left: 9em;
+}
+
+article:nth-of-type(2) {
+    display: none;
+}
+
+article:nth-of-type(3) {
+    display: none;
+}
+
+article:nth-of-type(4) {
+    display: none;
+}
+
+article:nth-of-type(5) {
+    display: none;
+}
+
+article:nth-of-type(6) {
+    display: none;
+}
+
+article>h2 {
+    color: aquamarine;
+    font-size: 5em;
+    margin-bottom: 0;
+}
+
+article>img {
+    display: none;
+}
+
+article>p {
+    max-width: 20em;
+    margin-left: 0.3em;
+}
+
+article>p:nth-of-type(1) {
+    display: inline;
+    margin-right: 2em;
+    font-size: 0.8em;
+}
+
+article>p:nth-of-type(2) {
+    display: inline;
+    font-size: 0.8em;
+}
+
+article>p:nth-of-type(4) {
+    display: inline;
+    font-size: 0.8em;
+    margin-right: 2em;
+}
+
+article>p.actors {
+/*    display: inline-block;*/
+    color: white;
+    opacity: 0;
+    display: none;
+    font-size: 0.8em;
+}
+
+article>p.character {
+/*    display: inline-block;*/
+    color: lightgreen;
+    opacity: 0;
+    display: block;
+    font-size: 0.8em;
+}
+
+article>p.actors.show {
+    color: white;
+    opacity: 1;
+/*    margin-left: 30em;*/
+    display: table;
+}
+
+article>p.character.show {
+    opacity: 1;
+    display: table;
+}
+
+article>button {
+    padding: 0.5em 1em;
+    margin-left: 0.3em;
+    background-color: transparent;
+    color: white;
+    border-radius: 0.5em;
+    border-color: aquamarine;
+}
