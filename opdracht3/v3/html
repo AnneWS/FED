@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Movie it</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header></header>
+    <section>
+        <div class="carroussel" onkeydown="">
+            <img class="mySlides show" src="img/EVIL-DEAD-David.jpg">
+            <img class="mySlides" src="img/1412030800288-cached-1.jpg">
+            <img class="mySlides" src="img/the-godfather-1.jpg">
+            <img class="mySlides" src="img/06-movie-hair-moments-uma-thurman-pulp-fiction.jpg">
+            <img class="mySlides" src="img/840334-download-free-batman-the-dark-knight-rises-wallpaper-2000x1333-photo.jpg">
+            <img class="mySlides" src="img/img.jpg">
+        </div>
+        <nav>
+            <button class="back" onkeypress="back">&#10094;</button>
+            <button class="next" onkeypress="next">&#10095;</button>
+        </nav>
+    </section>
+
+
+    <footer></footer>
+
+    <script src="js/movie.js"></script>
+</body>
+
+</html>
